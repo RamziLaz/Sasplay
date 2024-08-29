@@ -1,0 +1,191 @@
+/* PlayWinEarn.module.css */
+.container {
+  text-align: center;
+  background: url(./bg4.svg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.title {
+  margin-top: 1em;
+  font-size: 4em;
+}
+.text{
+  padding: 2rem;
+}
+.subtitle {
+  font-size: 2em;
+  margin-bottom: 100px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+
+}
+
+.card {
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContent {
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2); /* Simulate opacity */
+  border: 0.1px solid white; /* Purple border */
+
+}
+
+.iconWrapper {
+  background-color: white;
+  padding: 10px;
+  border-radius: 2rem;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+}
+
+.textWrapper {
+  text-align: center;
+  background-color: #8b5ef9;
+  border-radius: 2rem;
+  border: 2px solid white; /* Purple border */
+
+  padding: 5px;
+  color: white;
+}
+
+.description {
+  font-size: 1.1em;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3em;
+  }
+
+  .subtitle {
+    font-size: 1.8em;
+    margin-bottom: 80px;
+  }
+
+  .cards {
+    gap: 60px;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .cardContent {
+    height: 220px;
+  }
+
+  .icon {
+    width: 130px;
+    height: 130px;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .title {
+    font-size: 2.5em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+  }
+
+  .cards {
+    gap: 30px;
+  }
+
+  .card {
+    width: 160px;
+  }
+
+  .cardContent {
+    height: 200px;
+  }
+
+  .icon {
+    width: 110px;
+    height: 110px;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .cards {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .card {
+    width: 60%;
+    max-width: 300px;
+  }
+
+  .cardContent {
+    height: 180px;
+    padding: 15px;
+  }
+
+  .icon {
+    width: 110px;
+    height: 110px;
+  }
+
+  .description {
+    font-size: 1.2em;
+  }
+}

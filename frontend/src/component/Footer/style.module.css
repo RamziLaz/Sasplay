@@ -1,0 +1,218 @@
+/* Footer.module.css */
+.footer {
+  display: flex;
+  background: #1A1821 ;
+  color: white;
+  padding: 50px 90px ;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+#section1{
+  display: flex;
+}
+
+.highlight {
+  color: #8a4af3;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #aaa;
+  line-height: 30px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 30px;
+}
+
+.icon {
+  
+  color: white;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #8a4af3;
+}
+
+.sectionTitle {
+  font-size: 1.5em;
+}
+.logo{
+  width: 100px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emailInput {
+  background-color:#201F2A  ;
+  padding: 10px 20px;
+  width: 250px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.subscribeButton {
+  padding: 10px 20px;
+  border: none;
+  background: #8a4af3;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.subscribeButton:hover {
+  background: #6a37c1;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .footer{
+    padding: 50px 20px;
+  }
+  .emailInput{
+    width: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 60px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    min-width: auto;
+    margin: 10px 0;
+  }
+  .emailInput{
+    width: 250px;
+  }
+
+  #section1 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 40px;
+  }
+
+  .description {
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+
+  .socialIcons {
+    gap: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 0.9em;
+  }
+
+  .links a {
+    font-size: 0.9em;
+  }
+
+  .subscription {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .emailInput{
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .section {
+    margin: 5px 0;
+  }
+
+  .description {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .emailInput{
+    width: unset;
+  }
+  .socialIcons {
+    gap: 15px;
+  }
+
+  .subscription {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .emailInput,
+  .subscribeButton {
+    margin: 10px;
+  }
+
+  .links li {
+    margin-bottom: 8px;
+  }
+
+  .links a {
+    font-size: 0.8em;
+  }
+}

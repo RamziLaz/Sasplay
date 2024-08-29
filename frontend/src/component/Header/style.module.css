@@ -1,0 +1,207 @@
+/* General Styles */
+.home {
+  color: white;
+  
+  display: flex;
+  flex-direction: column;
+  background: url("./newbg.jpg") no-repeat center center; /* Background image */
+  background-size: cover; /* Ensures the background image covers the entire screen */
+  height: 100vh; /* Ensures the component takes the full height of the viewport */
+  background-repeat: no-repeat;
+  padding: 0 20px; /* Add padding to ensure content doesn't touch the edges */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.header h1 {
+  font-size: 5rem;
+  text-align: left;
+}
+
+.emailForm {
+  display: flex;
+
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.emailInput {
+  padding: 01rem 7rem;
+  font-size: 1rem;
+  border: 2px solid #6a0dad; /* Purple border */
+  background-color: transparent;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.joinButton {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #6a0dad;
+  border: px solid #6a0dad; /* Purple border */
+
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 10rem;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.mockup {
+  width: 100%;
+  max-width: 250px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.mockupImage {
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 17rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+/* Responsive styles */
+/* Large Tablet styles (min-width: 769px and max-width: 1024px) */
+@media (min-width:1000px ) and (max-width: 1250px) {
+  .home{
+    height: unset;
+  }
+  .header h1 {
+    font-size: 4.5rem; /* Adjust the heading size for large tablets */
+  }
+
+  .emailInput {
+    padding: 0.5rem 4rem; /* Adjust padding for large tablets */
+    font-size: 1rem; /* Keep font size similar but adjust padding */
+  }
+
+  .container {
+    flex-direction: row; /* Keep items in a row but adjust spacing */
+    gap: 10rem; /* Reduce gap between elements */
+  }
+
+  .mockup {
+    max-width: 250px; /* Adjust mockup size for large tablets */
+  }
+}
+
+@media (min-width:769px ) and (max-width: 1000px) {
+  .home{
+    height: unset;
+  }
+  .header h1 {
+    font-size: 3.5rem; /* Adjust the heading size for large tablets */
+  }
+
+  .emailInput {
+    padding: 0.5rem 3rem; /* Adjust padding for large tablets */
+    font-size: 1rem; /* Keep font size similar but adjust padding */
+  }
+
+  .container {
+    flex-direction: column; /* Keep items in a row but adjust spacing */
+    gap: 4rem; /* Reduce gap between elements */
+  }
+
+  .mockup {
+    max-width: 250px; /* Adjust mockup size for large tablets */
+  }
+}
+
+
+/* Small Tablet styles (min-width: 481px and max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .home{
+    height: auto;
+  }
+ 
+  .header h1 {
+    font-size: 3rem; /* Adjust the heading size for small tablets */
+  }
+
+  .emailInput {
+    padding: 0.5rem 3rem; /* Adjust padding for small tablets */
+    font-size: 0.875rem; /* Adjust font size for small tablets */
+  }
+
+  .container {
+    flex-direction: column; /* Stack items vertically on small tablets */
+    gap: 5rem; /* Reduce gap between elements */
+  }
+
+  .mockup {
+    max-width: 200px;
+  }
+}
+
+/* Large Mobile styles (min-width: 321px and max-width: 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .home {
+    height: auto;
+  }
+  .header h1 {
+    font-size: 2.8rem; /* Adjust the heading size for large mobile devices */
+    text-align: center; /* Center the text on mobile */
+  }
+
+  .emailInput {
+    padding: 0.5rem 2rem; /* Adjust padding for large mobile devices */
+    font-size: 0.75rem; /* Adjust font size for large mobile devices */
+  }
+
+  .joinButton {
+    padding: 0.75rem; /* Adjust button padding for large mobile devices */
+    font-size: 0.875rem; /* Adjust button font size for large mobile devices */
+    max-width: 100%; /* Make button full width on mobile */
+  }
+
+  .container {
+    flex-direction: column; /* Stack items vertically on large mobile devices */
+    gap: 4rem; /* Adjust gap between elements */
+    align-items: center;
+  }
+
+  .mockup {
+    max-width: 200px; /* Adjust mockup size for large mobile devices */
+  }
+}
+
+/* Small Mobile styles (max-width: 320px) */
+@media (max-width: 320px) {
+  .header h1 {
+    font-size: 2rem; /* Adjust the heading size for small mobile devices */
+    text-align: center; /* Center the text on mobile */
+  }
+
+  .emailInput {
+    padding: 0.4rem 1.5rem; /* Adjust padding for small mobile devices */
+    font-size: 0.7rem; /* Adjust font size for small mobile devices */
+  }
+
+  .joinButton {
+    padding: 0.6rem; /* Adjust button padding for small mobile devices */
+    font-size: 0.8rem; /* Adjust button font size for small mobile devices */
+    max-width: 100%; /* Make button full width on mobile */
+  }
+
+  .container {
+    height: auto;
+    flex-direction: column; /* Stack items vertically on small mobile devices */
+    gap: 3rem; /* Further reduce gap between elements */
+    align-items: center;
+  }
+
+  .mockup {
+  }
+}

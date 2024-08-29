@@ -1,0 +1,133 @@
+/* src/pages/GamingSkills.module.css */
+
+.container {
+  background: url(./bg22.png) no-repeat center center; /* Background image */
+  background-size: cover; /* Ensure the background image covers the entire screen */
+  color: #4a00e0; /* Dark purple text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a00e0; /* Dark purple color */
+}
+
+.highlight {
+  color: #ff5722; /* Orange color */
+}
+
+.sections {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageWrapper {
+}
+
+.mockupImage {
+  margin-top: 50px;margin-bottom: -4px;
+
+
+}
+
+.textWrapper {
+  padding: 20px;
+  color: #4a00e0; /* Dark purple color */
+  width: 80%;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1500px) {.container {
+  height: auto;
+}
+  .mockupImage {
+margin-bottom: -4px;
+    max-width: 500px; /* Further reduce max width for smaller screens */
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    height: auto; /* Allow height to adjust based on content */
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .sections {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 2rem; /* Reduce font size on mobile */
+  }
+
+  .mockupImage {
+    margin: 0;
+
+    max-width: 450px; /* Further reduce max width for smaller screens */
+    order: 2;
+  }
+  .imageWrapper {
+    order: 2;
+    display: flex;
+    width: 100%;
+  }
+  .textWrapper {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 1.7rem; /* Further reduce font size for readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto; /* Allow height to adjust based on content */
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 2rem; /* Reduce font size on mobile */
+  }
+
+  .mockupImage {
+    margin: 0;
+
+    max-width: 320px; /* Further reduce max width for smaller screens */
+    order: 2;
+  }
+  .imageWrapper {
+    order: 2;
+    display: flex;
+    width: 100%;
+  }
+  .textWrapper {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 1.2rem; /* Further reduce font size for readability */
+  }
+}
