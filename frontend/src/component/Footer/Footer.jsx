@@ -1,6 +1,7 @@
 // Footer.js
 import React, { useState } from "react";
-import axios from "axios";import styles from "./style.module.css";
+import axios from "axios";
+import styles from "./style.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -13,7 +14,7 @@ const Footer = () => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post("http://sasplay.io/api/emails_sasplay", { email });
+      await axios.post("http://54.92.180.215:5000/api/emails_sasplay", { email });
       alert("Email added to the waitlist!");
       setEmail(""); // Clear the input field
     } catch (err) {
@@ -70,11 +71,14 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Your Email"
-              className={styles.emailInput}value={email}
+              className={styles.emailInput}
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            
-            <button className={styles.subscribeButton} onClick={handleSubmit}>Subscribe</button>
+
+            <button className={styles.subscribeButton} onClick={handleSubmit}>
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
