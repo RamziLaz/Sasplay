@@ -13,7 +13,7 @@ const Header = () => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post("http://localhost:5000/api/emails_sasplay", { email });
+      await axios.post("http://sasplay.io/api/emails_sasplay", { email });
       alert("Email added to the waitlist!");
       setEmail(""); // Clear the input field
     } catch (err) {
